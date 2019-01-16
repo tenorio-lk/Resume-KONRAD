@@ -1,0 +1,16 @@
+{
+  "name": "resume",
+  "version": "1.0.0",
+  "description": "first practice KONRAD",
+  "main": "index.js",
+  "dependencies": {
+    "bootstrap": "^4.2.1",
+    "watch-http-server": "^0.7.6"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "dev": "watch-http-server -o"
+  },
+  "author": "Diego Tenorio Solís",
+  "license": "ISC"
+}

@@ -1,0 +1,375 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+h2{
+    color:#737373;
+    font: 3em "Open Sans", sans-serif;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 2em;
+    padding-top: 1em;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+footer{
+    background-color: black;
+    color: gray;
+    text-align: center;
+}
+
+.main-header{
+    position: fixed;
+    width: 100%;
+}
+
+.main-nav{
+    background-color: rgba(0,0,0,0.5);
+}
+
+.main-nav-ol{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-end;
+    margin: 0;
+    padding: 1em;
+}
+
+.main-nav-ol li:not(:last-child){
+    margin-right: 1em;
+}
+
+.main-nav-ol li:last-child{
+    margin-right: 5em;
+}
+
+.main-nav-ol a{
+    color:white;
+    font: 1em "Open Sans", sans-serif;
+    text-decoration: none;
+}
+
+.main-nav-ol li{
+    margin-left: 2px;
+    padding: 0px, 10px;
+    list-style-type: none;
+}
+
+@media all and (max-width: 500px) {
+    .main-nav-ol {
+      flex-direction: column;
+      align-content: center;
+    }
+
+    .main-nav-ol li{
+        padding: 0.2em 0;
+    }
+}
+
+.main-cover{
+    background: url(./images/flamingo.jpg) no-repeat center fixed;  
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.cover {
+    display: flex;
+    flex-direction: column;
+}
+
+.cover h1{
+    border-bottom: solid 1px white;
+    color: white;
+    font-family: 'Merienda';font-size: 2em;
+    margin-left: 1em;
+    margin-top: 3em;
+    margin-bottom: 0;
+}
+
+.cover h2{
+    color: white;
+    font-family: 'Merienda';font-size: 1.5em;
+    margin-left: 1.5em;
+    margin-top: 0;
+}
+
+.academic{
+    background-color: rgb(248, 248, 248);
+    display: flex;
+    flex-direction: column;
+}
+
+.gray{
+    background-color: rgb(248, 248, 248);
+}
+
+.darkgray{
+    background-color: #DCE2E8;
+}
+
+.academic-section{
+    height: 80vh;
+}
+
+.section p{
+    margin: 0.5em 0;
+}
+
+.section h3{
+    font-size: 1.5em;
+    margin-bottom: 0.5em;
+}
+
+.section p:last-child{
+    font-size: 0.9em;
+}
+
+.academic-section-bachelor{
+    margin-left: 10%;
+}
+
+.academic-section-highschool{
+    margin: 5% 0 50px 20%;
+}
+
+.section div{
+    padding-left: 1em;
+    border-left: solid 2px #325A83;
+}
+
+.experience-section{
+    background-color: #DCE2E8;
+    height: 100vh;
+}
+
+.experience-section h2{
+    color: #1C4976;
+    padding-top: 0.9em;
+    margin-top: 0;
+}
+
+.experience-section-mopt{
+    margin-right: 10%;
+    text-align: right;
+    padding-right: 1em;
+    border-right: solid 2px #325A83;
+}
+
+.experience-section-mopt h3{
+    margin-top: 10%;
+}
+
+.skills{
+    height: 200vh;
+    background-color: rgb(248, 248, 248);
+}
+
+.skills h3{
+    margin-top: 0;
+    font-family: 'Merienda';
+    font-size: 1.5em;
+    color: rgb(105, 105, 105);
+    margin-left: 10%;
+    margin-bottom: 5%;
+}
+
+.skills h4{
+    margin-top: 0;
+    font-family: 'Merienda';
+    font-size: 1em;
+    color: rgb(105, 105, 105);
+    margin-left: 15%;
+    border-left: solid 2px rgb(13, 98, 182);
+    padding-left: 0.5em;   
+}
+
+.skills h3:first-child{
+    margin-bottom: 10%;
+}
+
+.fit-images ol{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: center;
+}
+
+.technical div{
+    margin-bottom: 1.5em;
+}
+
+.lenguages li{
+    display: inline;
+}
+
+.desktop li:nth-child(1){
+    content: url(./images/python.png);
+}
+
+.desktop li:nth-child(2){
+    content: url(./images/java.png);
+}
+
+.desktop li:nth-child(3){
+    content: url(./images/c++.png);
+}
+
+.desktop li:nth-child(4){
+    content: url(./images/c.png);
+}
+
+.desktop li:nth-child(5){
+    content: url(./images/ccharp.png);
+}
+
+.web li:nth-child(1){
+    content: url(./images/node.png);
+}
+
+.web li:nth-child(2){
+    content: url(./images/javascript.png);
+}
+
+.web li:nth-child(3){
+    content: url(./images/angular.png);
+}
+
+.web li:nth-child(4){
+    content: url(./images/html5.png);
+}
+
+.web li:nth-child(5){
+    content: url(./images/css.png);
+}
+
+.fit-images li{
+    width: 10%;
+    height: 10%;
+}
+
+.bases li:nth-child(1){
+    content: url(./images/sql2.png);
+}
+
+.bases li:nth-child(2){
+    content: url(./images/mysql.png);
+}
+
+.bases li:nth-child(3){
+    content: url(./images/mongodb.png);
+}
+
+.ide li:nth-child(1){
+    content: url(./images/vsc.png);
+}
+
+.ide li:nth-child(2){
+    content: url(./images/netbeans.png);
+}
+
+.ide li:nth-child(3){
+    content: url(./images/sublime.png);
+}
+
+.ide li:nth-child(4){
+    content: url(./images/visual\ studio.png);
+}
+
+.ide li:nth-child(5){
+    content: url(./images/android\ studio.png);
+}
+
+.ide li:nth-child(6){
+    content: url(./images/net.png);
+}
+
+.soft li{
+    display: inline;
+}
+
+.soft li:nth-child(1){
+    content: url("./images/sociable.png");
+}
+
+.soft li:nth-child(2){
+    content: url("./images/camaleon.png");
+}
+
+.soft li:nth-child(3){
+    content: url(./images/empaty.png);
+}
+
+.soft li:nth-child(4){
+    content: url(./images/teamwork.png);
+}
+
+.soft li:nth-child(5){
+    content: url(./images/positive.png);
+}
+
+.interests{
+    height: 100vh;
+}
+
+.interests-basic li:nth-child(1){
+    content: url(./images/enviromental.png);
+}
+
+.interests-basic li:nth-child(2){
+    content: url(./images/active.png);
+}
+
+.interests-basic li:nth-child(3){
+    content: url(./images/music.png);
+}
+
+.interests-basic li:nth-child(4){
+    content: url(./images/dance.png);
+}
+
+.interests-basic li:nth-child(5){
+    content: url(./images/extra/mtb.jpg);
+}
+
+.interests li{
+    display: inline;
+}
+
+.interests-cool p{
+    display: inline;
+    text-align: center;
+    margin: 0 auto;
+}
+
+footer{
+    padding: 1em 0;
+}
+
+footer p{
+    margin: 0;
+    padding: 0 0 0.4em 0.5em;
+}
+
+footer a{
+    text-decoration: none;
+    color: gray;
+}
+
+.footer-img{
+    height: 20px;
+    width: 20px;
+}
+
+footer div{
+    display: flex;
+    justify-content: center;
+}
+
+.interests{
+    max-width: 100px;
+}
